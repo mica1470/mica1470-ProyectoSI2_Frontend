@@ -2,7 +2,13 @@
     <div class="col-7">
         <div class="card">
             <div class="card-body" background="red">
-                <h3 class="text-themecolor">Aquí va el mapa</h3>
+                <google-map [center]="position">
+                    <map-marker
+                    [position] = "position"
+                    [label] = "label"
+                    [title] = "title">
+                    </map-marker>
+                </google-map>
             </div>
         </div>
     </div>
