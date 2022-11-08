@@ -19,9 +19,9 @@ export class FarmaciaService {
     return this.httpClient.get<any[]>('http://localhost:8080/farmacia').toPromise();
   }
 
-  // create({id_farmacia, nombre_farmacia, direccion, horario, telefono, descripcion}): Promise<any>{
-  //   const bodyRequest = {id_farmacia, nombre_farmacia, direccion, horario, telefono, descripcion};
+  create({id_farmacia, nombre_farmacia, direccion, horario, telefono, descripcion}:{id_farmacia:any, nombre_farmacia:any, direccion:any, horario:any,telefono:any,descripcion:any} ): Promise<any | undefined>{
+    const bodyRequest = {id_farmacia, nombre_farmacia, direccion, horario, telefono, descripcion};
 
-  //   return this.httpClient.post<any>('http://localhost:8080/farmacia', bodyRequest).toPromise();
-  // }
+    return this.httpClient.post<any>('http://localhost:8080/farmacia', bodyRequest).toPromise();
+  }
 }

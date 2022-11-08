@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg " style="background-color: rgb(80, 167, 196); height: 80px;">
     <div class="container-fluid">
       <a class="navbar-brand offset-1" href="#">
-        <img src="/src/assets/imagenes/COLFAR-LOGO-ICONO.png" alt="COLFARJUY" width="250" height="70">
+        <img src="/assets/images/logo-colfarjuy.png" alt="COLFARJUY" width="250" height="70">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,13 +10,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-4 mb-lg-0 offset-5">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/src/Administrador.html">Inicio</a>
+            <a class="nav-link active" style="color:white; font-weigh:bold; font-size:16px" aria-current="page" href="/src/Administrador.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Instrucciones</a>
+            <a class="nav-link active" style="color:white; font-weigh:bold; font-size:16px" aria-current="page" href="#">Instrucciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page"
+            <a class="nav-link active" aria-current="page" style="color:white; font-weigh:bold; font-size:16px"
               href="https://www.colfarjuy.org.ar/institucional/contactos-institucionales">Centro de Ayuda</a>
           </li>
         </ul>
@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-4 mb-lg-0 offset-6">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Administrador</a>
+            <a class="nav-link " style="color:white; font-weigh:bold; font-size:16px" aria-current="page" href="#">Administrador</a>
           </li>
         </ul>
       </div>
@@ -39,23 +39,23 @@
     <div class="container">
       <div class="row">
   
-        <div class="d-grid offset-1 col-4">
-          <table>
-            <tr>
-                <th>Id Farmacia</th>
-                <th>Nombre</th>
-                <th>Direccion</th>
-                <th>Telefono</th>
-                <th>Horario</th>
-                <th>Descripcion</th>
+        <div class="d-grid offset-1 col-8">
+          <table >
+            <tr style="background-color: yellowgreen">
+                <th style="font-size: 18px; padding:10px; width:120px">Id Farmacia</th>
+                <th style="font-size: 18px; padding:10px; width:80px">Nombre</th>
+                <th style="font-size: 18px; padding:10px; width:80px">Direccion</th>
+                <th style="font-size: 18px; padding:10px; width:80px">Telefono</th>
+                <th style="font-size: 18px; padding:10px; width:80px">Horario</th>
+                <th style="font-size: 18px; padding:10px; width:80px">Descripcion</th>
             </tr>
             <tr *ngFor="let farmacia of arrFarmacia">
-                <td>{{farmacia.id_farmacia}}</td>
-                <td>{{farmacia.nombre_farmacia}}</td>
-                <td>{{farmacia.direccion}}</td>
-                <td>{{farmacia.telefono}}</td>
-                <td>{{farmacia.horario}}</td>
-                <td>{{farmacia.descripcion}}</td>
+                <td style="font-size: 14px; text-align: center; border: 1px solid #ddd;">{{farmacia.id_farmacia}}</td>
+                <td style="font-size: 14px; text-align: center; border: 1px solid #ddd;">{{farmacia.nombre_farmacia}}</td>
+                <td style="font-size: 14px; text-align: center; border: 1px solid #ddd ;">{{farmacia.direccion}}</td>
+                <td style="font-size: 14px; text-align: center; border: 1px solid #ddd;">{{farmacia.telefono}}</td>
+                <td style="font-size: 14px; text-align: center; border: 1px solid #ddd;">{{farmacia.horario}}</td>
+                <td style="font-size: 14px; text-align: center; border: 1px solid #ddd;">{{farmacia.descripcion}}</td>
             </tr>
           </table>
         </div>

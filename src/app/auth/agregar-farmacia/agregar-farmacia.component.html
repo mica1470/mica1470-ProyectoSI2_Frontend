@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: rgb(80, 167, 196); height: 80px;">
     <div class="container-fluid">
       <a class="navbar-brand offset-1" href="#">
-        <img src="/Colfarjuy_files/COLFAR-LOGO-ICONO.png" alt="COLFARJUY" width="250" height="70">
+        <img src="/assets/images/logo-colfarjuy.png" alt="COLFARJUY" width="250" height="70">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,20 +10,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-4 mb-lg-0 offset-5">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link active" style="color:white; font-weigh:bold; font-size:16px" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Instrucciones</a>
+            <a class="nav-link active" style="color:white; font-weigh:bold; font-size:16px" aria-current="page" href="#">Instrucciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Centro de Ayuda</a>
+            <a class="nav-link active" style="color:white; font-weigh:bold; font-size:16px" aria-current="page" href="#">Centro de Ayuda</a>
           </li>
         </ul>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-4 mb-lg-0 offset-6">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Administrador</a>
+            <a class="nav-link " style="color:white; font-weigh:bold; font-size:16px" aria-current="page" href="#">Administrador</a>
           </li>
         </ul>
       </div>
@@ -36,7 +36,7 @@
   
   <div class="container">
   
-    <form class="row g-3"   >
+    <form class="row g-3" [formGroup] ="agregarForm" (ngSubmit)="onSubmit()"   >
       <div class="col-md-5">
         <label for="inputID" class="form-label">ID</label>
         <div class="input-group">
@@ -51,7 +51,7 @@
       </div>
       <div class="col-md-5">
         <label for="inputNombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputNombre" formControlName="nombre">
+        <input type="text" class="form-control" id="inputNombre" formControlName="nombre_farmacia">
       </div>
       <div class="offset-1 col-6">
         <label for="inputAddress" class="form-label">Dirección</label>
@@ -79,33 +79,6 @@
   </div>
   
   <br><br>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 col-sm-6">
-        <div class="col-md-3 col-sm-3 alert alert-light" role="alert">
-  
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-  
-          <p class="alert-heading"> Notificacion #</p>
-  
-          <hr>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. </p> <br>
-          <hr>
-          <p class="mb-0"> lorem</p> <br>
-          <div>
-            <button class="btn btn-outline-warning" type="submit">Aceptar</button>
-            <button class="btn btn-outline-warning" type="button" data-dismiss="alert" aria-label="Close">Cerrar</button>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  </div>
   <!-------------------------------------------------FOOTER------------------------------------------------------------->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="facebook" viewBox="0 0 16 16">
@@ -124,15 +97,15 @@
       </path>
     </symbol>
   </svg>
-  <div class="container-fluid">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="container-fluid" >
+    <footer style="background-color: rgb(80, 167, 196); height: 80px;" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-5 d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
       </div>
   
       <div class="col-md-3 mb-3 text-muted">
         <h4>Centro de Ayuda</h4>
-        <p>Call : +123 400 123</p>
+        <p style="color:white; font-weigh:bold; font-size:16px" >Call : +123 400 123</p>
       </div>
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-3"><a class="text-muted" href="https://twitter.com/InfoColFarJuy" target="_blank"><svg class="bi"
