@@ -2,10 +2,10 @@
     <div class="col-7">
         <div class="card">
             <div class="card-body" background="red">
-                <google-map [center]="position">
-                    <map-marker
-                    [position] = "position"
-                    [label] = "label"
+                <google-map [center]="positionJujuy">
+                    <map-marker  *ngFor="let farmacia of farmacias"
+                    [position] = "farmacia.position"
+                    [label] = "farmacia.label"
                     [title] = "title">
                     </map-marker>
                 </google-map>

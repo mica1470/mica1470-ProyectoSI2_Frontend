@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FarmaciaService } from 'src/app/services/farmacia.service';
 
 @Component({
   selector: 'app-agregar-farmacia',
@@ -8,17 +9,19 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AgregarFarmaciaComponent implements OnInit {
 
-  agregarForm = new FormGroup({
-    id_farmacia: new FormControl('', Validators.required),
-    nombre_farmacia: new FormControl('', Validators.required),
-    direccion: new FormControl('', Validators.required),
-    telefono: new FormControl('', Validators.required),
-    horario: new FormControl('', Validators.required),
-    descripcion: new FormControl('', Validators.required),
-    id_usuario: new FormControl('', Validators.required),
-  })
+  agregarForm = FormGroup;
 
-  constructor() { }
+  constructor( private farmaciaService: FarmaciaService) { 
+    // this.agregarForm = new FormGroup ({
+    //   id_farmacia: new FormControl(''),
+    //   nombre_farmacia: new FormControl(''),
+    //   direccion: new FormControl(''),
+    //   telefono: new FormControl(''),
+    //   horario: new FormControl(''),
+    //   descripcion: new FormControl(''),
+    //   id_usuario: new FormControl(''),
+    // });
+  }
 
   ngOnInit(): void {
   }
